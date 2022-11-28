@@ -1,0 +1,15 @@
+{
+  "name": "adventure-store",
+  "version": "1.0.0",
+  "description": "javascript, store",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "store"
+  ],
+  "author": "Roberto tavitas <robertomirandatavitas@gmail.com>",
+  "license": "ISC"
+}
