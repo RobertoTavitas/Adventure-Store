@@ -36,7 +36,7 @@ handleClass(closeSearch, searchForm, 'remove', 'active');
 
 
 // Swiper carousel in Home Section
-let swiper = new Swiper(".home-slider", {
+let homeSwiper = new Swiper(".home-slider", {
   loop: true,
   grabCursor: true,
   pagination: {
@@ -45,5 +45,31 @@ let swiper = new Swiper(".home-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+
+// Swiper carousel in Shop Section
+let productSwiper = new Swiper(".product-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });

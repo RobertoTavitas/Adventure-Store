@@ -309,7 +309,75 @@ section {
   }
 }
 
+// Shop section
+.shop {
 
+  .slide {
+    border: $border;
+
+    &:hover .image .icons  {
+      transform: translateY(0);
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+  
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .icons {
+        width: 100%;
+        position: absolute;
+        bottom: 2rem; left: 0;
+        text-align: center;
+        z-index: 10;
+        transform: translateY(7rem);
+
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background: $black;
+          color: $white;
+          margin: 0;
+
+          &:hover{
+            background: $green;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 1rem 0;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      .price {
+        padding: 1rem 0;
+        padding-top: 0.5rem;
+        font-size: 2rem;
+        color: $green;
+      }
+
+      .stars i {
+        font-size: 1.7rem;
+        color: $black;
+      }
+    }
+  }
+}
 
 
 
@@ -406,5 +474,9 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
   }
 }
