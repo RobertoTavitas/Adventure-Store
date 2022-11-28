@@ -45,6 +45,13 @@ section {
   color: #fff;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -54,6 +61,10 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
+}
+.header.active {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .header .logo {
   margin-right: auto;
@@ -188,6 +199,32 @@ section {
 .swiper-button-prev::after {
   font-size: 2rem;
   color: #10221b;
+}
+
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+.category .box-container .box {
+  text-align: center;
+  padding: 1rem;
+}
+.category .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.category .box-container .box h3 {
+  font-size: 2rem;
+  color: #219150;
+}
+.category .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem;
+  line-height: 2;
 }
 
 @media (max-width: 1200px) {
